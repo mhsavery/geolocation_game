@@ -9,6 +9,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
         <script type="text/javascript" charset="utf-8" src="js/geo.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     </head>
@@ -16,6 +17,71 @@
 
 
     <body>
+
+        <form class="form-horizontal">
+            <fieldset>
+                <legend>Geolocation Challenge</legend>
+                <div class="control-group">
+                  <label class="control-label" for="location1">Location 1</label>
+                  <div class="controls">
+                    <input id="location1" name="location1" type="text" placeholder="" class="input-large" required="">
+                    <button id="go1" name="go1" class="btn btn-primary btn-sm">Go To</button>
+                    <button id="set1" name="set1" class="btn btn-success btn-sm">Set To</button>                    
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="location2">Location 2</label>
+                  <div class="controls">
+                    <input id="location2" name="location2" type="text" placeholder="" class="input-large">
+                    <button id="go2" name="go2" class="btn btn-primary btn-sm">Go To</button>
+                    <button id="set2" name="set2" class="btn btn-success btn-sm">Set To</button>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="location3">Location 3</label>
+                  <div class="controls">
+                    <input id="location3" name="location3" type="text" placeholder="" class="input-large">
+                    <button id="go3" name="go3" class="btn btn-primary btn-sm">Go To</button>
+                    <button id="set3" name="set3" class="btn btn-success btn-sm">Set To</button>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="location4">Location 4</label>
+                  <div class="controls">
+                    <input id="location4" name="location4" type="text" placeholder="" class="input-large">   
+                    <button id="go4" name="go4" class="btn btn-primary btn-sm">Go To</button>
+                    <button id="set4" name="set4" class="btn btn-success btn-sm">Set To</button>                 
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="location5">Location 5</label>
+                  <div class="controls">
+                    <input id="location5" name="location5" type="text" placeholder="" class="input-large">
+                    <button id="go5" name="go5" class="btn btn-primary btn-sm">Go To</button>
+                    <button id="set5" name="set5" class="btn btn-success btn-sm">Set To</button>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="roundTimer">Seconds Per Round</label>
+                  <div class="controls">
+                    <input id="roundTimer" name="roundTimer" type="text" placeholder="10" class="input-mini">
+                    <p class="help-block">help</p>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="createLink">Create Link</label>
+                  <div class="controls">
+                    <button id="createLink" name="createLink" class="btn btn-warning">Button</button>
+                  </div>
+                </div>
+            </fieldset>
+        </form>
 
         <div id="map-canvas"></div>
 
