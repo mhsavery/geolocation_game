@@ -1,5 +1,14 @@
 html, body, #map-canvas {
         height: 100%;
-        margin: 0px;
-        padding: 0px
+}
+
+form {
+	position: absolute; 
+	bottom: 5%; 
+	left: 1%;
+	z-index: 1; 
+	width:17%;
+	padding: 1em;
+	background-color: white; 
+	opacity: 0.85;
 }
